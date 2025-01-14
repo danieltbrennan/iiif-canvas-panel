@@ -11,6 +11,7 @@ const canvases = [
 const allEvents = ['zoom', 'world-ready', 'choice', 'move', 'canvas-change', 'media', 'ready', 'zoom', 'range-change', 'click'];
 const selector = "canvas-panel,sequence-panel";
 const saintGines = 'https://media.getty.edu/iiif/manifest/1e0ed47e-5a5b-4ff0-aea0-45abee793a1c';
+const ibis = "https://media.getty.edu/iiif/manifest/b9f50ca1-2a44-4079-ba62-1bcc3cb6575a";
 const welcome = "https://iiif.wellcomecollection.org/presentation/b18035723";
 
 
@@ -149,6 +150,13 @@ export const CanvasWithSkipSizes = () => {
 
 
   return ImageViewer({manifestUrl: saintGines, skipSizes: true})
+
+}
+
+export const CanvasWithSkipSizesNoRender = () => {
+
+
+  return ImageViewer({manifestUrl: ibis, skipSizes: true})
 
 }
 
